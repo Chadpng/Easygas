@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EasyGas ร่มเกล้า 24 | ร้านแก๊สส่งถึงบ้าน มีนบุรี ลาดกระบัง</title>
+  <meta name="description" content="EasyGas ร่มเกล้า 24 จำหน่ายและส่งแก๊สหุงต้มทุกขนาด 4กก. 15กก. 48กก. บริการพื้นที่ร่มเกล้า มีนบุรี ลาดกระบัง เปิดทุกวัน 07:00–19:00 น. โทร 083-052-2197" />
+  <meta name="keywords" content="แก๊สร่มเกล้า, ร้านแก๊สร่มเกล้า, ส่งแก๊สมีนบุรี, ส่งแก๊สลาดกระบัง, EasyGas, แก๊สหุงต้ม, ส่งแก๊สถึงบ้าน" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700;800&family=Kanit:wght@600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green:       #1B8B3B;
+      --green-dark:  #146B2D;
+      --green-light: #25B34D;
+      --green-pale:  #EBF7EF;
+      --green-glow:  rgba(27,139,59,0.35);
+      --gold:        #C8A84B;
+      --gold-light:  #E8C96A;
+      --dark:        #0D1A12;
+      --mid:         #3D5449;
+      --muted:       #6B8878;
+      --light:       #F4FAF6;
+      --white:       #FFFFFF;
+      --border:      rgba(27,139,59,0.18);
+    }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Sarabun',sans-serif;color:var(--dark);background:var(--white);overflow-x:hidden;}
+    ::-webkit-scrollbar{width:6px;}
+    ::-webkit-scrollbar-track{background:var(--light);}
+    ::-webkit-scrollbar-thumb{background:var(--green);border-radius:3px;}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,0.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 24px rgba(27,139,59,0.08);}
+    .nav-left{display:flex;align-items:center;gap:12px;}
+    .nav-logo{width:38px;height:38px;object-fit:contain;}
+    .nav-brand{font-family:'Kanit',sans-serif;font-size:1.15rem;font-weight:700;color:var(--green-dark);}
+    .nav-tel a{font-weight:700;color:var(--green);text-decoration:none;font-size:.9rem;border:1.5px solid var(--green);border-radius:40px;padding:6px 16px;transition:all .2s;}
+    .nav-tel a:hover{background:var(--green);color:#fff;}
+
+    /* HERO */
+    .hero{min-height:100vh;background:var(--dark);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:100px 24px 80px;}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 15% 50%,rgba(27,139,59,.28) 0%,transparent 70%),radial-gradient(ellipse 50% 40% at 85% 20%,rgba(37,179,77,.12) 0%,transparent 60%),radial-gradient(ellipse 80% 80% at 50% 100%,rgba(13,26,18,.9) 0%,transparent 60%);}
+    .hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(27,139,59,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(27,139,59,.06) 1px,transparent 1px);background-size:48px 48px;}
+    .hero-glow{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(27,139,59,.2) 0%,transparent 70%);top:50%;left:20%;transform:translate(-50%,-50%);pointer-events:none;animation:breathe 4s ease-in-out infinite;}
+    @keyframes breathe{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.8;}50%{transform:translate(-50%,-50%) scale(1.15);opacity:1;}}
+    .hero-content{position:relative;z-index:2;text-align:center;max-width:760px;}
+    .hero-logo{width:110px;height:110px;object-fit:contain;margin:0 auto 24px;filter:drop-shadow(0 0 28px rgba(27,139,59,.8));animation:float 3.5s ease-in-out infinite;display:block;}
+    @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(27,139,59,.18);border:1px solid rgba(27,139,59,.4);color:var(--green-light);font-size:.78rem;font-weight:600;letter-spacing:1.5px;padding:7px 18px;border-radius:40px;margin-bottom:22px;text-transform:uppercase;backdrop-filter:blur(8px);}
+    .badge-dot{width:7px;height:7px;border-radius:50%;background:#4ADE80;animation:blink 2s infinite;}
+    @keyframes blink{0%,100%{opacity:1;}50%{opacity:.3;}}
+    .hero-title{font-family:'Kanit',sans-serif;font-size:clamp(3rem,9vw,6.5rem);font-weight:900;color:var(--white);line-height:.95;letter-spacing:-2px;margin-bottom:6px;}
+    .hero-title .accent{color:var(--green-light);}
+    .hero-title .small{font-size:.55em;letter-spacing:.5px;color:var(--gold-light);display:block;}
+    .hero-sub{font-size:clamp(1rem,2.5vw,1.25rem);color:rgba(255,255,255,.55);line-height:1.7;margin:20px auto 36px;max-width:520px;}
+    .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+    .btn-main{display:inline-flex;align-items:center;gap:9px;background:var(--green);color:#fff;font-family:'Sarabun',sans-serif;font-size:1.05rem;font-weight:700;padding:15px 34px;border-radius:50px;text-decoration:none;border:none;cursor:pointer;box-shadow:0 8px 32px rgba(27,139,59,.4);transition:all .3s;position:relative;overflow:hidden;}
+    .btn-main::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.15) 0%,transparent 60%);}
+    .btn-main:hover{transform:translateY(-3px);box-shadow:0 0 32px var(--green-glow),0 16px 48px rgba(27,139,59,.5);background:var(--green-light);}
+    .btn-outline{display:inline-flex;align-items:center;gap:9px;background:transparent;color:rgba(255,255,255,.8);font-family:'Sarabun',sans-serif;font-size:1.05rem;font-weight:600;padding:15px 34px;border-radius:50px;text-decoration:none;border:1.5px solid rgba(255,255,255,.2);transition:all .3s;}
+    .btn-outline:hover{border-color:var(--green-light);color:var(--green-light);transform:translateY(-3px);}
+    .hero-info{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:40px;flex-wrap:wrap;}
+    .hero-info-item{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.45);font-size:.85rem;}
+
+    /* DIVIDER */
+    .divider{height:1px;background:linear-gradient(90deg,transparent,var(--green),transparent);opacity:.3;}
+
+    /* SECTIONS */
+    .sec{padding:88px 24px;}
+    .sec-inner{max-width:1040px;margin:0 auto;}
+    .sec-label{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--green);margin-bottom:14px;}
+    .sec-label::before{content:'';display:block;width:20px;height:2px;background:var(--green);border-radius:1px;}
+    .sec-title{font-family:'Kanit',sans-serif;font-size:clamp(1.9rem,4vw,2.9rem);font-weight:900;line-height:1.1;color:var(--dark);margin-bottom:52px;}
+
+    /* SERVICES */
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;}
+    .svc-card{background:var(--white);border:1.5px solid var(--border);border-radius:20px;padding:30px 26px;position:relative;overflow:hidden;transition:all .35s cubic-bezier(.23,1,.32,1);}
+    .svc-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--green-pale) 0%,transparent 60%);opacity:0;transition:opacity .35s;}
+    .svc-card:hover{border-color:var(--green);transform:translateY(-6px);box-shadow:0 20px 60px rgba(27,139,59,.12);}
+    .svc-card:hover::before{opacity:1;}
+    .svc-icon{width:52px;height:52px;background:var(--green-pale);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:18px;transition:background .35s;}
+    .svc-card:hover .svc-icon{background:rgba(27,139,59,.15);}
+    .svc-card h3{font-weight:700;font-size:1.05rem;margin-bottom:8px;position:relative;}
+    .svc-card p{color:var(--muted);font-size:.9rem;line-height:1.6;position:relative;}
+
+    /* PRICES */
+    .prices-sec{background:var(--dark);position:relative;overflow:hidden;}
+    .prices-sec::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(27,139,59,.12) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none;}
+    .prices-sec .sec-label{color:rgba(37,179,77,.9);}
+    .prices-sec .sec-label::before{background:var(--green-light);}
+    .prices-sec .sec-title{color:var(--white);}
+    .prices-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px;}
+    .price-card{border:1.5px solid rgba(255,255,255,.08);border-radius:24px;padding:36px 26px;text-align:center;position:relative;overflow:hidden;transition:all .35s;}
+    .price-card::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(27,139,59,.08) 0%,transparent 60%);opacity:0;transition:opacity .35s;}
+    .price-card:hover{border-color:var(--green);transform:translateY(-6px);}
+    .price-card:hover::after{opacity:1;}
+    .price-card.pop{border-color:var(--green);background:linear-gradient(160deg,rgba(27,139,59,.16) 0%,rgba(27,139,59,.04) 100%);box-shadow:0 0 40px rgba(27,139,59,.2);}
+    .pop-badge{position:absolute;top:16px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 14px;border-radius:20px;white-space:nowrap;}
+    .price-kg{font-family:'Kanit',sans-serif;font-size:4.5rem;font-weight:900;color:var(--green-light);line-height:1;margin-top:16px;}
+    .price-unit{color:rgba(255,255,255,.4);font-size:.8rem;margin:4px 0 20px;letter-spacing:.5px;}
+    .price-val{font-family:'Kanit',sans-serif;font-size:1.5rem;font-weight:700;color:var(--white);}
+    .price-desc{font-size:.8rem;color:rgba(255,255,255,.35);margin-top:10px;}
+    .price-footer{text-align:center;margin-top:44px;color:rgba(255,255,255,.35);font-size:.88rem;line-height:1.7;}
+    .price-footer strong{color:var(--green-light);}
+
+    /* AREA */
+    .area-sec{background:var(--green-pale);}
+    .area-wrap{display:flex;gap:14px;flex-wrap:wrap;}
+    .area-pill{display:flex;align-items:center;gap:8px;background:var(--white);border:1.5px solid var(--green);color:var(--green-dark);font-weight:700;font-size:1.05rem;padding:12px 24px;border-radius:50px;box-shadow:0 4px 16px rgba(27,139,59,.08);transition:all .25s;}
+    .area-pill:hover{background:var(--green);color:#fff;transform:translateY(-3px);}
+    .area-note{margin-top:28px;color:var(--muted);font-size:.95rem;}
+
+    /* CONTACT */
+    .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;}
+    .contact-card{background:var(--light);border:1.5px solid var(--border);border-radius:22px;padding:32px 28px;transition:all .3s;}
+    .contact-card:hover{border-color:var(--green);box-shadow:0 8px 32px rgba(27,139,59,.1);}
+    .c-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:var(--green);text-transform:uppercase;margin-bottom:8px;}
+    .c-value{font-family:'Kanit',sans-serif;font-size:1.8rem;font-weight:700;color:var(--dark);text-decoration:none;display:block;transition:color .2s;}
+    .c-value:hover{color:var(--green);}
+    .c-desc{font-size:.88rem;color:var(--muted);margin-top:4px;}
+    .map-wrap{border-radius:22px;overflow:hidden;border:1.5px solid var(--border);margin-top:32px;box-shadow:0 8px 32px rgba(27,139,59,.08);}
+    .map-wrap iframe{display:block;width:100%;height:320px;border:none;}
+
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(27,139,59,.2);text-align:center;padding:36px 24px;color:rgba(255,255,255,.3);font-size:.85rem;}
+    footer span{color:var(--green-light);}
+
+    /* FLOAT */
+    .float-cta{position:fixed;bottom:28px;right:28px;z-index:300;}
+    .float-btn{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 6px 28px rgba(0,0,0,.25);transition:transform .25s;background:var(--green);animation:ring 2.8s ease-in-out infinite;}
+    .float-btn:hover{transform:scale(1.12);}
+    @keyframes ring{0%,90%,100%{transform:rotate(0)}92%{transform:rotate(-18deg)}96%{transform:rotate(18deg)}98%{transform:rotate(-9deg)}}
+
+    @media(max-width:640px){.hero-title{letter-spacing:-1px;}.hero-info{flex-direction:column;gap:12px;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+    <img class="nav-logo" src="logo.png" alt="EasyGas Logo" onerror="this.style.display='none'" />
+    <span class="nav-brand">EasyGas ร่มเกล้า 24</span>
+  </div>
+  <div class="nav-tel"><a href="tel:0830522197">📞 083-052-2197</a></div>
+</nav>
+
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <img class="hero-logo" src="logo.png" alt="EasyGas Logo" onerror="this.style.display='none'" />
+    <div class="hero-badge"><span class="badge-dot"></span> ร่มเกล้า · มีนบุรี · ลาดกระบัง</div>
+    <h1 class="hero-title">Easy<span class="accent">Gas</span><span class="small">ร่มเกล้า 24</span></h1>
+    <p class="hero-sub">ร้านแก๊สหุงต้มคุณภาพ ส่งถึงบ้าน<br>รวดเร็ว ราคายุติธรรม เชื่อถือได้</p>
+    <div class="hero-btns">
+      <a href="tel:0830522197" class="btn-main">📞 โทรสั่งแก๊ส</a>
+      <a href="tel:0867763137" class="btn-outline">📱 086-776-3137</a>
+    </div>
+    <div class="hero-info">
+      <div class="hero-info-item"><span>⏰</span> เปิดทุกวัน 07:00–19:00 น.</div>
+      <div class="hero-info-item"><span>🚚</span> ส่งถึงบ้าน รวดเร็ว</div>
+      <div class="hero-info-item"><span>✅</span> แก๊สแท้ มีมาตรฐาน</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="sec">
+  <div class="sec-inner">
+    <div class="sec-label">บริการของเรา</div>
+    <h2 class="sec-title">ครบ จบ ใกล้บ้านคุณ</h2>
+    <div class="services-grid">
+      <div class="svc-card"><div class="svc-icon">🚚</div><h3>ส่งถึงบ้าน</h3><p>สั่งแล้วรอ เราส่งให้ถึงหน้าประตู รวดเร็ว ทันใจ ไม่ต้องออกไปไหน</p></div>
+      <div class="svc-card"><div class="svc-icon">🔵</div><h3>แก๊สทุกขนาด</h3><p>มีครบทั้ง 4 กก. 15 กก. และ 48 กก. เลือกได้ตามความต้องการ</p></div>
+      <div class="svc-card"><div class="svc-icon">🔧</div><h3>เปลี่ยนถังปลอดภัย</h3><p>ตรวจสอบท่อและวาล์วทุกครั้งก่อนส่ง มั่นใจปลอดภัย 100%</p></div>
+      <div class="svc-card"><div class="svc-icon">🏅</div><h3>แก๊สแท้ มีมาตรฐาน</h3><p>สินค้าผ่านมาตรฐาน น่าเชื่อถือ บริการมายาวนาน ลูกค้าไว้วางใจ</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="sec prices-sec">
+  <div class="sec-inner">
+    <div class="sec-label">ราคาแก๊ส</div>
+    <h2 class="sec-title">ราคาแก๊สหุงต้ม</h2>
+    <div class="prices-grid">
+      <div class="price-card"><div class="price-kg">4</div><div class="price-unit">กิโลกรัม</div><div class="price-val">สอบถาม</div><div class="price-desc">เหมาะสำหรับครัวเรือน</div></div>
+      <div class="price-card pop"><div class="pop-badge">ยอดนิยม</div><div class="price-kg">15</div><div class="price-unit">กิโลกรัม</div><div class="price-val">สอบถาม</div><div class="price-desc">ขายดีที่สุด</div></div>
+      <div class="price-card"><div class="price-kg">48</div><div class="price-unit">กิโลกรัม</div><div class="price-val">สอบถาม</div><div class="price-desc">เหมาะสำหรับร้านค้า</div></div>
+    </div>
+    <div class="price-footer">ราคาอาจมีการเปลี่ยนแปลงตามราคาตลาด<br><strong>โทรสอบถามได้เลย 083-052-2197</strong></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="sec area-sec">
+  <div class="sec-inner">
+    <div class="sec-label">พื้นที่บริการ</div>
+    <h2 class="sec-title">เราส่งถึงบ้านคุณ</h2>
+    <div class="area-wrap">
+      <div class="area-pill">📍 ร่มเกล้า</div>
+      <div class="area-pill">📍 มีนบุรี</div>
+      <div class="area-pill">📍 ลาดกระบัง</div>
+      <div class="area-pill">📍 และพื้นที่ใกล้เคียง</div>
+    </div>
+    <p class="area-note">สงสัยว่าส่งถึงบ้านคุณไหม? โทรถามได้เลยครับ 😊</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="sec" id="contact">
+  <div class="sec-inner">
+    <div class="sec-label">ติดต่อเรา</div>
+    <h2 class="sec-title">พูดคุย สั่งง่าย โทรได้เลย</h2>
+    <div class="contact-grid">
+      <div class="contact-card"><div class="c-label">📞 โทรศัพท์หลัก</div><a href="tel:0830522197" class="c-value">083-052-2197</a><div class="c-desc">รับตลอดเวลาทำการ</div></div>
+      <div class="contact-card"><div class="c-label">📱 โทรศัพท์สำรอง</div><a href="tel:0867763137" class="c-value">086-776-3137</a><div class="c-desc">สายสำรอง</div></div>
+      <div class="contact-card"><div class="c-label">⏰ เวลาทำการ</div><div class="c-value" style="font-size:1.5rem;">07:00–19:00 น.</div><div class="c-desc">เปิดทุกวัน ไม่มีวันหยุด</div></div>
+    </div>
+    <div class="map-wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.5!2d100.75!3d13.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zEasyGas!5e0!3m2!1sth!2sth!4v1" allowfullscreen="" loading="lazy" title="แผนที่ EasyGas"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 <span>EasyGas ร่มเกล้า 24</span> · ร้านแก๊สส่งถึงบ้าน ย่านร่มเกล้า มีนบุรี ลาดกระบัง</p>
+  <p style="margin-top:6px;">โทร 083-052-2197 · 086-776-3137 · เปิดทุกวัน 07:00–19:00 น.</p>
+</footer>
+
+<div class="float-cta">
+  <a href="tel:0830522197" class="float-btn" title="โทรสั่งแก๊ส">📞</a>
+</div>
+
+</body>
+</html>
